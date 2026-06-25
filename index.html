@@ -259,6 +259,8 @@
   .btn:hover{text-decoration:none;transform:translateY(-2px)}
   .btn svg{width:16px;height:16px}
   .btn-ghost{background:transparent;color:#fff !important;border:1.5px solid rgba(255,255,255,.6)}
+  .cta-actions{display:flex;flex-direction:column;gap:10px;flex-shrink:0}
+  @media(max-width:560px){.cta-actions{width:100%;max-width:300px;margin:0 auto}}
   /* CTA social proof + trust */
   .cta-product .rating{display:flex;align-items:center;gap:8px;font-size:14.5px;margin:10px 0 0}
   .cta-product .rating .stars{color:var(--gold);letter-spacing:2px;font-size:15px}
@@ -628,10 +630,12 @@
     <div class="rating"><span class="stars">★★★★★</span> <span><b>4,99/5</b> · über 700 Trusted-Shops-Bewertungen</span></div>
     <div class="trust"><span>✓ Versandkostenfrei AT &amp; DE</span> <span>✓ Frisch aus der Manufaktur</span> <span>✓ Austria Bio AT-BIO-301</span></div>
   </div>
-  <a class="btn" href="https://sannis.at/produkt/sannis-bio-leinoel-extra-nativ/">Bio-Leinöl kaufen
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-  </a>
-  <a class="btn btn-ghost" href="https://sannis.at/produkt/sannis-bio-leinoel-extra-nativ-500ml/">500 ml entdecken</a>
+  <div class="cta-actions">
+    <a class="btn" href="https://sannis.at/produkt/sannis-bio-leinoel-extra-nativ/">Bio-Leinöl kaufen
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <a class="btn btn-ghost" href="https://sannis.at/produkt/sannis-bio-leinoel-extra-nativ-500ml/">500 ml entdecken</a>
+  </div>
 </div>
 
 </article>
