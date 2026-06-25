@@ -284,12 +284,17 @@
 
   /* Newsletter inline */
   .nl-inline{background:linear-gradient(135deg,var(--lav-100),var(--lav-200));border-radius:20px;padding:30px 32px;margin:42px 0;text-align:center}
-  .nl-inline h3{margin:0 0 6px;font-size:23px}
+  .nl-inline h3,.nl-inline .box-title{margin:0 0 6px;font-size:23px;font-family:'Poppins',sans-serif;line-height:1.25;color:var(--ink)}
   .nl-inline p{margin:0 auto 18px;max-width:460px;color:var(--ink-soft);font-size:16px}
   .nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap}
   .nl-form input{flex:1;min-width:200px;padding:14px 18px;border-radius:50px;border:1px solid var(--line);font-size:15px;font-family:inherit}
   .nl-form button{background:var(--purple);color:#fff;border:0;padding:14px 26px;border-radius:50px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit}
   .nl-form button:hover{background:var(--purple-700)}
+  .nl-hp{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;padding:0!important;border:0!important}
+  .nl-consent{display:flex;align-items:flex-start;gap:8px;justify-content:center;max-width:440px;margin:14px auto 0;text-align:left}
+  .nl-consent input{margin-top:3px;accent-color:var(--purple);width:16px;height:16px;flex-shrink:0;cursor:pointer}
+  .nl-consent label{font-size:13px;color:var(--ink-soft);line-height:1.4;cursor:pointer}
+  .nl-consent a{color:var(--purple);text-decoration:underline}
   .nl-tiny{font-size:12px;color:var(--ink-soft);margin-top:12px}
 
   /* FAQ */
@@ -483,7 +488,7 @@
   <div class="txt">
     <h3>SANNIS Bio-Leinöl extra nativ, 250 ml</h3>
     <p>Etwa 55 % pflanzliches Omega 3 (ALA) · kaltgepresst unter 29 °C · Austria Bio (AT-BIO-301) · mild, nussig, nicht bitter.</p>
-    <div class="price">€ 17,90 inkl. MwSt. · versandkostenfrei in AT &amp; DE</div>
+    <div class="price">Versandkostenfrei in AT &amp; DE · frisch aus der Alpin Manufaktur</div>
     <div class="rating"><span class="stars">★★★★★</span> <span><b>4,99/5</b> · über 700 Trusted-Shops-Bewertungen</span></div>
     <div class="trust"><span>✓ Versandkostenfrei AT &amp; DE</span> <span>✓ Frisch aus der Manufaktur</span> <span>✓ 100 % vegan</span></div>
   </div>
@@ -502,7 +507,7 @@
   <div class="pill">🥄 1 EL ≈ <b>5 g ALA</b></div>
   <div class="pill">📏 Empfehlung: <b>1 bis 2 EL/Tag</b></div>
   <div class="pill">❄️ Verwendung: <b>nur kalt</b></div>
-  <div class="pill">🧊 Nach Öffnen: <b>im Kühlschrank</b></div>
+  <div class="pill">🌾 Bio Austria: <b>AT-BIO-301</b></div>
 </div>
 
 <p>Ein Wort zur Verwendung, weil hier die meisten Fehler passieren: <strong>Leinöl gehört nicht in die Pfanne.</strong> Die empfindlichen Fettsäuren reagieren auf Hitze, der Rauchpunkt liegt bei etwa 60 Grad. Leinöl entfaltet seinen Wert kalt, über Salat, in Topfen oder Joghurt, im Müsli, im Smoothie oder über die fertig gekochte Mahlzeit. Zum Braten nehmen Sie hitzestabile Öle wie Kokos- oder Rapsöl.</p>
@@ -514,8 +519,8 @@
 <p>Leinöl ist so wertvoll wie empfindlich. Genau die ungesättigten Fettsäuren, die es ausmachen, reagieren auf Sauerstoff, Licht und Wärme. Deshalb trennt sich an der Verarbeitung die Spreu vom Weizen. Worauf es ankommt:</p>
 <ul>
   <li><strong>Schonende Kaltpressung:</strong> Wird zu heiß gepresst, entstehen Bitterstoffe und die Omega 3 Fettsäuren leiden. Wir pressen in der Manufaktur langsam <strong>unter 29 Grad</strong>, im Slow-Press-Verfahren.</li>
-  <li><strong>Frische und kurze Wege:</strong> Leinöl schmeckt frisch mild, fein-nussig und cremig. Kleine Chargen und schnelle Abfüllung halten es frisch, statt es monatelang im Lager altern zu lassen.</li>
-  <li><strong>Lichtschutz und guter Verschluss:</strong> Lichtundurchlässige Flaschen und ein dichter Verschluss halten Licht und Sauerstoff fern. Unsere Flasche mit patentiertem Spezialverschluss hält das Öl nach dem Öffnen bis zu sechs Monate frisch.</li>
+  <li><strong>Frische und kurze Wege:</strong> Leinöl schmeckt frisch mild, fein-nussig und cremig. In kleinen Chargen gepresst und zügig abgefüllt, kommt es jung und mild in die Küche, statt lange zu altern.</li>
+  <li><strong>Lichtschutz und guter Verschluss:</strong> Lichtundurchlässige Flaschen und ein dichter Verschluss halten Licht und Sauerstoff fern. Unsere Flasche mit patentiertem Spezialverschluss schützt das empfindliche Öl genau davor.</li>
   <li><strong>Nachvollziehbare Herkunft:</strong> Unser Leinöl ist Austria Bio zertifiziert (<a href="https://sannis.at/zertifizierungen/">AT-BIO-301</a>), aus kontrolliert biologischer Leinsaat von langjährigen Partnern. Bio heißt hier ohne Gentechnik und ohne synthetische Pflanzenschutzmittel.</li>
 </ul>
 
@@ -555,13 +560,18 @@
 
 <!-- ============ NEWSLETTER ============ -->
 <div class="nl-inline">
-  <h3>Pflanzenkraft für jeden Tag 🌿</h3>
+  <div class="box-title">Pflanzenkraft für jeden Tag 🌿</div>
   <p>Ernährungstipps rund um Bio-Leinöl und Omega 3, Rezeptideen aus der Manufaktur und exklusive Specials, direkt in Ihre Inbox.</p>
-  <form class="nl-form" onsubmit="return false;">
-    <input type="email" placeholder="Ihre E-Mail-Adresse" aria-label="E-Mail-Adresse">
+  <form id="sib-form-article" class="nl-form" method="POST" action="https://f47ca72e.sibforms.com/serve/MUIFACEV8ul_KNTftjTyIQzzi2Y65uRiWQZ2n9uFvzV3ecijLLktAac1XWcR9RgwTOV4-wBXj_ZgKY2Gugy8bgX4vhB8VmahnXlIdi1OLBCQrLVmwLxRt0q2IxWdBeGoXWEcF9xAzicXOAHB_SuViTJdr5KUlkYiTRqG1oI_Grv1mG8aL8BgdcD2EJpiy2AuU8__7CSCQoyHxlyN" data-type="subscription">
+    <input class="nl-email" type="email" id="EMAIL-article" name="EMAIL" autocomplete="off" placeholder="Ihre E-Mail-Adresse" aria-label="E-Mail-Adresse" data-required="true" required>
     <button type="submit">Anmelden</button>
+    <input class="nl-hp" type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="locale" value="de">
   </form>
-  <div class="nl-tiny">Jederzeit abbestellbar. Kein Spam, versprochen.</div>
+  <div class="nl-consent">
+    <input type="checkbox" id="datenschutz_check_article" name="datenschutz_check" required form="sib-form-article">
+    <label for="datenschutz_check_article">Ich möchte den Newsletter erhalten und bestätige, dass ich die <a href="https://sannis.at/datenschutzbelehrung/" target="_blank" rel="noopener">Datenschutzerklärung</a> gelesen und verstanden habe.</label>
+  </div>
 </div>
 
 <!-- ============ FAQ ============ -->
@@ -609,7 +619,7 @@
 <div class="cta-product">
   <div class="shot-wrap">
     <div class="shot"><img src="produkt-bio-leinoel.webp" width="2554" height="2560" loading="lazy" decoding="async" alt="SANNIS Bio-Leinöl extra nativ, kaltgepresst mit etwa 55 Prozent pflanzlichem Omega 3"></div>
-    <span class="badge">€ 17,90</span>
+    <span class="badge">250 ml</span>
   </div>
   <div class="txt">
     <h3>Jetzt frisches Bio-Leinöl sichern</h3>
